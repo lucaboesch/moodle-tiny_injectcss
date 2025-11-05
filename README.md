@@ -1,18 +1,16 @@
-# Full Pluginname
+# Inject CSS
 
--- Small two sentence description --
+This plugin inserts the CSS of the selected Moodle theme into the TinyMCE editor to ensure that the text's appearance in the editor matches how it will actually display.
 
-## Features:
--- Small feature overview --
-- Bulletpoint 1
-- Bulletpoint 2
-- ...
+## Features
+The entirety of the themes CSS is inserted into the TinyMCE editor.
 
-### Usage:
-1. -- First Step --
-2. -- Second Step --
+### Usage
+Make sure that the plugin is enabled under Site administration > Plugins > Text editors > TinyMCE editor > Inject CSS.
+The CSS of the theme should be inserted automatically into the TinyMCE editor.
+No further configuration is required.
 
-## Installation and configuration
+## Installation
 Choose one of the following installation methods:
 ### Installation via ZIP file
 1. Log in to your Moodle site as an administrator and go to Site administration > Plugins > Install plugins.
@@ -32,15 +30,14 @@ Choose one of the following installation methods:
 
 
 ### System Requirements and Dependencies
-- Moodle x.x or higher
+This plugin has so far only been tested on Moodle 4.5.
 
 ## Known limitations
--- List the limitations here --
+The Plugin only works with the 'TinyMCE editor'.
+It does not work with the 'Atto HTML editor' or the 'Plain text area'.
 
 ## Language support
-This plugin supports the following languages:
-- English
-- German
+There is no need for translations since it only inserts the CSS of the theme.
 
 ## License
 2025 oncampus GmbH <support@oncampus.de>
