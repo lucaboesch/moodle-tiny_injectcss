@@ -26,6 +26,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tiny_injectcss';
 $plugin->release = '0.1.0';
-$plugin->version = 2025110305;
-$plugin->requires = 2022112800;
+$plugin->version = 2025112400;
+$plugin->requires = 2024100707;
 $plugin->maturity = MATURITY_ALPHA;
