@@ -14,7 +14,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Tiny tiny_injectcss for Moodle.
+ * Tiny tiny_injectcss for Moodle. Inspired by tiny_elediastyles made by https://eledia.de/
  *
  * @module      tiny_injectcss/plugin
  * @copyright   2025 oncampus GmbH <support@oncampus.de>
