@@ -15,15 +15,28 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Plugin strings are defined here.
- *
+ * Privacy Subsystem implementation for tiny_injectcss.
  * @package     tiny_injectcss
- * @category    string
  * @copyright   2025 oncampus GmbH <support@oncampus.de>
- * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace tiny_injectcss\privacy;
 
-$string['pluginname'] = 'Inject CSS';
-$string['privacy:metadata'] = 'Das Plugin tiny_injectcss fügt ausschließlich das Theme-CSS in den Tiny_MCE Editor ein. Es speichert keinerlei Nutzerdaten.';
+/**
+ * Implements the null_provider interface as this plugin does not store
+ * any personal user data.
+ */
+class provider implements
+    // This plugin does not store any personal user data.
+    \core_privacy\local\metadata\null_provider {
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason(): string {
+        return 'privacy:metadata';
+    }
+}
