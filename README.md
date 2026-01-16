@@ -1,3 +1,4 @@
+[![Moodle Plugin CI](https://github.com/oncampus/moodle-tiny_injectcss/actions/workflows/moodle-plugin-ci.yml/badge.svg)](https://github.com/oncampus/moodle-tiny_injectcss/actions/workflows/moodle-plugin-ci.yml)
 # Inject CSS
 
 This plugin inserts the CSS of the selected Moodle theme into the TinyMCE editor to ensure that the text's appearance in the editor matches how it will actually display.
