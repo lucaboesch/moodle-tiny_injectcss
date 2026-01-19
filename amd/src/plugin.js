@@ -66,6 +66,7 @@ export default new Promise((resolve) => {
             return pluginMetadata;
         });
         resolve([pluginName]);
+        return pluginMetadata;
     }).catch((error) => {
         window.console.error("Error during plugin setup:", error);
         resolve([pluginName]);
